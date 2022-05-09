@@ -1,0 +1,151 @@
+body {
+  font-family: Courier;
+
+}
+
+  .containers {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1%;
+
+
+
+  }
+
+  h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  small {
+    font-size: 0.5em;
+  }
+
+  li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .col-1 {
+    flex-basis: 10%;
+  }
+
+  .col-2 {
+    flex-basis: 25%;
+  }
+
+  .col-3 {
+    flex-basis: 25%;
+  }
+
+
+  @media all and (max-width: 767px) {
+    .table-header {
+      display: none;
+    }
+
+    li {
+      display: flex;
+    }
+
+    .col {
+      display: flex;
+      padding: 10px 0;
+      flex-basis: 100%;
+    }
+
+    &:before {
+      color: #6C7A89;
+      padding-right: 10px;
+      content: attr(data-label);
+      flex-basis: 50%;
+      text-align: right;
+    }
+
+  }
+
+  input[type=button],
+  input[type=submit],
+  input[type=reset] {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.1);
+    
+  }
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: black;
+  border-radius: 40px;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.25), 
+    -2px -2px 5px 2px rgba(0,0,0,0.22);
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #1b8356;
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25), 
+    -5px -5px 10px 5px rgba(0,0,0,0.22);
+  color: white;
+  transition: 0.5s;
+  
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #15995f;
+  color: white;
+}
+
+  .back {
+    height: 40px;
+    width: 40px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 10px;
+    left: 10px;
+  }
+
+.recept{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.invoer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
